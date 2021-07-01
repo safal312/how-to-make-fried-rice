@@ -109,7 +109,7 @@ function submitHandler(e) {
 
 function theEnd() {
     // console.log("heree");
-    let bg = new Audio("/audio/music.mp3");
+    let bg = new Audio("audio/music.mp3");
     bg.volume = 0.5;
     bg.loop = true;
     bg.play();
