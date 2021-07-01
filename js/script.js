@@ -8,7 +8,6 @@ let answer = {
 }
 
 function startLoading() {
-    // console.log("loading...");
     loading.style.opacity = 1;
     loading.style.pointerEvents = "all";
 }
@@ -23,8 +22,6 @@ function init() {
     loading = document.querySelector('.loading');
     introVideo = document.querySelector('.intro-video video');
     title.addEventListener('click', () => {
-        let elem = document.documentElement;
-        // elem.requestFullscreen();
         title.style.opacity = 0;
         startLoading();
         setTimeout(() => {
@@ -34,9 +31,7 @@ function init() {
         }, 1000);
         introVideo.src = "videos/videos/First clip.mp4";
         introVideo.addEventListener("loadeddata", () => {
-            // console.log("here");
             stopLoading();
-            // introVideo.play();
             introVideo.addEventListener("ended", introVideoEnd);
         })
     })
@@ -56,7 +51,6 @@ function submitHandler(e) {
     startLoading();
     loading.innerHTML = "<img class='bg' src='images/bg.png'>Loading Story..";
     e.preventDefault();
-    // console.log("after submitt");
     
 
     popup.style.pointerEvents = "none";
@@ -64,7 +58,6 @@ function submitHandler(e) {
     answer.spicy = document.querySelector('input[name="spicy"]:checked').value;
     console.log(answer);
     finalVideo = document.querySelector(".final-video video");
-    // finalVideo.load();
     
     introVideo.remove();
 
@@ -90,17 +83,11 @@ function submitHandler(e) {
     
     document.querySelector(".final-video").style.display = "block";
     popup.style.opacity = 0;
-
-    // setTimeout(() => {
-    //     popup.remove();
-    // }, 500);
     
     finalVideo.play();
     finalVideo.addEventListener("loadeddata", () => {
-        // console.log("stataghsgh");
+
             stopLoading();    
-        
-        // finalVideo.play();
 
         finalVideo.addEventListener("ended", theEnd);
     })
@@ -108,7 +95,6 @@ function submitHandler(e) {
 }
 
 function theEnd() {
-    // console.log("heree");
     let bg = new Audio("audio/music.mp3");
     bg.volume = 0.5;
     bg.loop = true;
@@ -116,5 +102,4 @@ function theEnd() {
     let ending = document.querySelector(".the-end");
     ending.style.opacity = 1;
     ending.style.pointerEvents = "all";
-    // document.exitFullscreen();
 }
