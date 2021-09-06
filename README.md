@@ -3,7 +3,8 @@
 # Project Name
 
 This project is titled “How to make Fried Rice” .
-[I'm an inline-style link](https://sleepy-turing-de8b66.netlify.app/)
+
+[check it out here](https://sleepy-turing-de8b66.netlify.app/)
 
 # Project Description 
 This project is solely based on how to make fried rice . However , we try to tell a story through the process. The story of this project is based on a character who tries to impress his crush with his cooking skills . We first had a wide variety of ideas to choose from but we settled on this as it also would allow for some interactivity in our website. We try to involve the user as much as we can by letting the user choose the steps one has to follow in making fried rice. We also allow an option of whether the fried rice should be spicy or not and we show the user how the fried rice turned out to be in the process.  I will definitely say we were able to achieve most or implement most of our ideas . However , there were a few changes along the way where we had to opt for another method which wasn't a part of our original idea. This occurred during the shooting process and the editing process. However , we were able to make a good movie out of the shots that we had.
